@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px dashed red;
 }
 
 :root {
@@ -35,7 +34,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     row-gap: 50px;
-    margin: 0 
+    margin: 0;
 }
 
 .col-4 {
@@ -58,13 +57,15 @@ img {
 header {
     width: 100%;
     min-height: 70px;
+    background-color: var(--ly-header-contrast);
+    color: var(--ly-light-primary);
+    padding: 1rem;
+    position: fixed;
+    z-index: 100;
     a {
         color: var(--ly-light-primary);
         text-decoration: none;
     }
-    background-color: var(--ly-header-contrast);
-    color: var(--ly-light-primary);
-    padding: 1rem;
     div {
         justify-content: space-between;
         align-items: center;
@@ -85,12 +86,16 @@ header {
 /* Main */
 
 main {
-    padding: 3.75rem 0.5rem;
+    padding: 7rem 0.5rem;
     strong {
         color: var(--ly-contrast1);
     }
     .card {
         position: relative;
+
+        img:nth-child(2) {
+            display: none;
+        }
     
         .favorite {
             background-color: var(--ly-light-primary);
@@ -104,12 +109,6 @@ main {
                 right: 15px;
                 top: 15px;
             }
-        }
-    
-        :hover {
-            .favorite {
-            display: block;
-        }
         }
 
         .spec {
@@ -136,10 +135,16 @@ main {
             background-color: var(--ly-contrast2);
             left: 0;
         }
+
+        :hover img:nth-child(1) {
+            display: none;
+        }
+
+        :hover img:nth-child(2) {
+            display: block;
+        }
     }
 }
-
-
 
 /* Footer */
 
