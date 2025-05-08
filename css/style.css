@@ -34,6 +34,7 @@ img {
 .row {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 50px;
     margin: 0 
 }
 
@@ -42,22 +43,7 @@ img {
     padding: 0.5rem;
 }
 
-.card {
-    position: relative;
 
-    .favorite {
-        position: absolute;
-        top: 0;
-        right: 1rem;
-        display: none;
-    }
-
-    :hover {
-        .favorite {
-        display: block;
-    }
-    }
-}
 
 .d-flex {
     display: flex;
@@ -97,8 +83,68 @@ header {
 
 main {
     padding: 3.75rem 0.5rem;
+    strong {
+        color: var(--ly-contrast1);
+    }
+    .card {
+        position: relative;
+    
+        .favorite {
+            background-color: var(--ly-light-primary);
+            position: absolute;
+            top: 10px;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            i {
+                position:absolute;
+                right: 15px;
+                top: 15px;
+            }
+        }
+    
+        :hover {
+            .favorite {
+            display: block;
+        }
+        }
+
+        .spec {
+            position: absolute;
+            bottom: 95px;
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            font-size: small;
+            color: var(--ly-light-primary);
+            font-weight: bolder;
+        }
+
+        .discount {
+            left: 0;
+            background-color: var(--ly-contrast1);
+        }
+
+        .eco {
+            left: 65px;
+            background-color: var(--ly-contrast2);
+        }
+
+        .eco2 {
+            background-color: var(--ly-contrast2);
+            left: 0;
+        }
+    }
 }
 
 
 
 /* Footer */
+
+footer {
+    width: 100%;
+    height: 110px;
+    >div {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
