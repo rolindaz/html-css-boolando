@@ -43,7 +43,10 @@ img {
     padding: 0.5rem;
 }
 
-
+.footer-box {
+    padding-bottom: 0.5rem;
+    display: block;
+}
 
 .d-flex {
     display: flex;
@@ -141,10 +144,28 @@ main {
 /* Footer */
 
 footer {
+    align-content: center;
     width: 100%;
     height: 110px;
+    background-color: var(--ly-dark-primary);
+    color: var(--ly-light-primary);
+    a {
+        color: var(--ly-light-primary);
+        text-decoration: none;
+    }
     >div {
+        height: 70%;
         justify-content: space-between;
         align-items: center;
+        align-content: space-between;
+
+        #footer-box-2 {
+            text-align: center;
+        }
+
+        i {
+            font-size:x-large;
+            padding: 0 0.1rem;
+        }
     }
 }
