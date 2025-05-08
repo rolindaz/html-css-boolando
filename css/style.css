@@ -1,0 +1,74 @@
+/* Utilities */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px dashed red;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+    padding: 1rem;
+}
+
+.card {
+    position: relative;
+
+    .favorite {
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        display: none;
+    }
+
+    :hover {
+        scale: 1.05;
+        .favorite {
+        display: block;
+    }
+    }
+}
+
+:root {
+    /* Color Variables */
+    --ly-header-contrast: #ff6900;
+    --ly-dark-primary: #1a1a1a;
+    --ly-light-primary: white;
+    --ly-contrast1: #ff0000;
+    --ly-contrast2: #008000;
+}
+
+
+/* Header */
+
+header {
+    background-color: var(--ly-header-contrast);
+    color: var(--ly-light-primary);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Main */
+
+
+
+
+/* Footer */
