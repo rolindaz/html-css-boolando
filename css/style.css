@@ -93,7 +93,7 @@ main {
     .card {
         position: relative;
 
-        img:nth-child(2) {
+        .hover-img {
             display: none;
         }
     
@@ -135,14 +135,18 @@ main {
             background-color: var(--ly-contrast2);
             left: 0;
         }
+    }
+}
 
-        :hover img:nth-child(1) {
-            display: none;
-        }
+.card:hover {
+    .fixed-img {
+        display: none;
+    }
+}
 
-        :hover img:nth-child(2) {
-            display: block;
-        }
+.card:hover {
+    .hover-img {
+        display: block;
     }
 }
 
