@@ -85,7 +85,7 @@ header {
 
 /* Main */
 
-main {
+main{
     padding: 7rem 0.5rem;
     strong {
         color: var(--ly-contrast1);
@@ -148,6 +148,10 @@ main {
     .hover-img {
         display: block;
     }
+}
+
+i.fa-heart:hover {
+    color: #ff0000;
 }
 
 /* Footer */
